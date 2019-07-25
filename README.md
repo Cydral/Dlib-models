@@ -71,3 +71,9 @@ This repository contains trained models created by me (Davis King).  They are pr
 
   This model is trained on the [dlib front and rear end vehicles dataset](http://dlib.net/files/data/dlib_front_and_rear_vehicles_v1.tar).  The dataset contains images from vehicle dashcams which I manually annotated using dlib's imglab tool.
   
+* dnn_gender_classifier_v1.dat.bz2
+
+  This model is a gender classifier trained using a private dataset of about 200k different face images and was generated according to results shown in [Minimalistic CNN-based ensemble model for gender prediction from face images](http://www.eurecom.fr/fr/publication/4768/download/mm-publi-4768.pdf). The initial tests done used grayscale images for the network inputs and showed classification results superior to the results reported by G. Antipov et al.
+  To take up the authors' proposal to join the results of three networks, a simplification was made by finally presenting RGB images, thus simulating the three networks via the three image planes, also to improve the final performance.
+  Testing the DNN model against the LFW training set shows a successful classification rate of xx% for the selected model I (refer to the publication for the network definition).
+  
